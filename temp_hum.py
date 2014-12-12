@@ -42,8 +42,8 @@ for i in range(0,10):
                         timestamp = time.strftime('%b %d, %Y  %I:%M:%S %P')
                         temp_hum = 'Temp={0:0.1f}*F  Humidity={1:0.1f}%'.format(temperature_f, humidity)
                         json.dump(timestamp, file)
-                        json.dump(\n)
-                        json.dump(temp_hum, file)\n
+                        json.dump("\n", file)
+                        json.dump(temp_hum, file)
                         i += 1
                         time.sleep(5)
         else:
