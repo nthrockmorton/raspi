@@ -48,13 +48,13 @@ for i in range(0,10):
                         time.sleep(5)
                 except KeyboardInterrupt:
                         end = raw_input("Would you like to stop data collection? Y/N")
-                        if end = "Y":
+                        if end == "Y":
                                 break
-                        elif end = "y":
+                        elif end == "y":
                                 break
-                        elif end = "N":
+                        elif end == "N":
                                 continue
-                        elif end = "n":
+                        elif end == "n":
                                 continue
                         else:
                                 print ("Please select Y or N")
