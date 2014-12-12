@@ -41,8 +41,8 @@ for i in range(0,10):
         if humidity is not None and temperature is not None:
                         timestamp = time.strftime('%b %d, %Y  %I:%M:%S %P')
                         temp_hum = 'Temp={0:0.1f}*F  Humidity={1:0.1f}%'.format(temperature_f, humidity)
-                        json.dump(timestamp, file)
-                        json.dump(temp_hum, file)
+                        json.dump(timestamp, file)+"\n"
+                        json.dump(temp_hum, file)+"\n"
                         i += 1
                         time.sleep(5)
         else:
