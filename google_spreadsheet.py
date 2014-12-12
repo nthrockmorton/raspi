@@ -71,8 +71,7 @@ while True:
 
 	# Attempt to get sensor reading.
 	humidity, temp = Adafruit_DHT.read(DHT_TYPE, DHT_PIN)
-	temp = int(temp)
-	temp_f = temp*1.8 +32
+	
 
 	# Skip to the next reading if a valid measurement couldn't be taken.
 	# This might happen if the CPU is under a lot of load and the sensor
@@ -80,7 +79,7 @@ while True:
 	if humidity is None or temp is None:
 		time.sleep(2)
 		continue
-
+	temp_f = temp*1.8 +32
 	print ('Temperature: {0:0.1f} F').format(temp_f)
 	print ('Humidity:    {0:0.1f} %').format(humidity)
  
