@@ -42,7 +42,7 @@ for i in range(0,10):
                         temp_hum = 'Temp={0:0.1f}*F  Humidity={1:0.1f}%'.format(temperature_f, humidity)
                         print time.strftime('%b %d, %Y  %I:%M:%S %P')
                         print 'Temp={0:0.1f}*F  Humidity={1:0.1f}%'.format(temperature_f, humidity)
-                        file.write(timestamp, temp_hum)
+                        file.write('timestamp, temp_hum')
                         i += 1
                         time.sleep(5)
         else:
