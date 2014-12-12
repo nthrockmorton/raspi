@@ -42,8 +42,8 @@ for i in range(0,10):
                         print time.strftime('%b %d, %Y  %I:%M:%S %P')
                         file.write(time.strftime('%b %d, %Y %I:%M:%S %P')+"\n")
                         print 'Temp={0:0.1f}*F  Humidity={1:0.1f}%'.format(temperature_f, humidity)
-                        file.write('{0:0.1f}*F'.format(temperature_f)+"/n")
-                        file.write('{1:0.1f}%'.format(humidity)+"\n")
+                        file.write(('{0:0.1f}*F'.format(temperature_f))+"/n")
+                        file.write(('{1:0.1f}%'.format(humidity))+"\n")
                         i += 1
                         time.sleep(5)
                 except KeyboardInterrupt:
