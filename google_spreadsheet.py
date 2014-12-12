@@ -71,6 +71,7 @@ while True:
 
 	# Attempt to get sensor reading.
 	humidity, temp = Adafruit_DHT.read(DHT_TYPE, DHT_PIN)
+	temp = int(temp)
 	temp_f = temp*1.8 +32
 
 	# Skip to the next reading if a valid measurement couldn't be taken.
