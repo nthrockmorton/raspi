@@ -43,7 +43,7 @@ DHT_PIN  = 4
 
 # Google Docs account email, password, and spreadsheet name.
 GDOCS_EMAIL            = 'nick.throckmorton@gmail.com'
-GDOCS_PASSWORD         = 'bkplrybaxryajvwx'
+GDOCS_PASSWORD         = 'xxx'
 GDOCS_SPREADSHEET_NAME = 'Temp-Hum-Data'
 
 # How long to wait (in seconds) between measurements.
