@@ -29,7 +29,7 @@ sensor = Adafruit_DHT.DHT22
 pin = 4
 
 
-file = open("data.txt", "w")
+file = open("data.csv", "w")
 
 # Try to grab a sensor reading.  Use the read_retry method which will retry up
 # to 15 times to get a sensor reading (waiting 2 seconds between each retry).
@@ -38,26 +38,11 @@ for i in range(0,10):
         temperature_f = temperature * 1.8 +32
         i = 0
         if humidity is not None and temperature is not None:
-                try:
                         print time.strftime('%b %d, %Y  %I:%M:%S %P')
-                        file.write(time.strftime('%b %d, %Y %I:%M:%S %P')+"\n")
                         print 'Temp={0:0.1f}*F  Humidity={1:0.1f}%'.format(temperature_f, humidity)
-                        file.write('Temp={0:0.1f}*F  Humidity={1:0.1f}%'.format(temperature_f, humidity)+"/n")
+                        file.write((time.strftime('%b %d, %Y %I:%M:%S %P')),'{0:0.1f}*F'.format(temperature_f), '{1:0.1f}%'.format(humidity))
                         i += 1
                         time.sleep(5)
-                except KeyboardInterrupt:
-                        end = raw_input("Would you like to stop data collection? Y/N")
-                        if end == "Y":
-                                break
-                        elif end == "y":
-                                break
-                        elif end == "N":
-                                continue
-                        elif end == "n":
-                                continue
-                        else:
-                                print ("Please select Y or N")
-                                continue
         else:
                 print 'Failed to get reading. Try again!'
                 break
