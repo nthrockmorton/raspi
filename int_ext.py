@@ -20,7 +20,7 @@ GDOCS_PASSWORD         = 'bkplrybaxryajvwx'
 GDOCS_SPREADSHEET_NAME = 'Inside Outside'
 
 # How long to wait (in seconds) between measurements.
-FREQUENCY_SECONDS      = 30
+FREQUENCY_SECONDS      = 300
 
 
 
