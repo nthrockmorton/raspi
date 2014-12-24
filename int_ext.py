@@ -86,5 +86,5 @@ while True:
 
 	# Wait 30 seconds before continuing
 	print ('Wrote a row to {0}').format(GDOCS_SPREADSHEET_NAME)
-	
+	f.close()
 	time.sleep(FREQUENCY_SECONDS)
