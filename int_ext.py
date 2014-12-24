@@ -16,7 +16,7 @@ DHT_PIN  = 4
 
 # Google Docs account email, password, and spreadsheet name.
 GDOCS_EMAIL            = 'nick.throckmorton@gmail.com'
-GDOCS_PASSWORD         = 'bkplrybaxryajvwx'
+GDOCS_PASSWORD         = 'xxx'
 GDOCS_SPREADSHEET_NAME = 'Inside Outside'
 
 # How long to wait (in seconds) between measurements.
@@ -54,7 +54,7 @@ while True:
 		continue
 	
 	#Access URL of wunderground API
-  	f = urllib2.urlopen('http://api.wunderground.com/api/ffd38634c3e2642d/conditions/q/MN/Minneapolis.json')
+  	f = urllib2.urlopen('http://api.wunderground.com/api/xxx/conditions/q/MN/Minneapolis.json')
 
   	#read and parse the JSON file from wunderground
   	json_string = f.read()
