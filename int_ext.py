@@ -75,7 +75,7 @@ while True:
 
 	# Append the data in the spreadsheet, including a timestamp
 	try:
-		worksheet.append_row((datetime.datetime.now(), int_temp_f, humidity, location, temp_f, rel_humidity, current_condition))
+		worksheet.append_row((datetime.datetime.now(), int_temp_f, temp_f, humidity, rel_humidity, current_condition, location))
 	except:
 		# Error appending data, most likely because credentials are stale.
 		# Null out the worksheet so a login is performed at the top of the loop.
