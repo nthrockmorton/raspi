@@ -64,7 +64,7 @@ while True:
   	location = parsed_json['current_observation']['display_location']['city']
   	temp_f = parsed_json['current_observation']['temp_f']
   	current_condition = parsed_json['current_observation']['weather']
-  	rel_humidity = parsed_json['current_observation']['relative_humidity]
+  	rel_humidity = parsed_json['current_observation']['relative_humidity']
 	
 	int_temp_f = temp*1.8 +32
 	print ('Temperature: {0:0.1f} F').format(int_temp_f)
