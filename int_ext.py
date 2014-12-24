@@ -71,6 +71,7 @@ while True:
 	print ('Humidity:    {0:0.1f} %').format(humidity)
         print "Current temperature in %s is: %s F" % (location, temp_f)
         print "Current weather is %s in %s" % (current_condition, location)
+        print "Current relative humidity is %s in %s" % (rel_humidity, location)
 
 	# Append the data in the spreadsheet, including a timestamp
 	try:
