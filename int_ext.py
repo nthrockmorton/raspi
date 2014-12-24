@@ -61,7 +61,7 @@ while True:
 	parsed_json = json.loads(json_string)
 
   	#variables from JSON
-  	location = parsed_json['current_observation']['display_location']['city']
+  	location = parsed_json['current_observation']['display_location']['full']
   	temp_f = parsed_json['current_observation']['temp_f']
   	current_condition = parsed_json['current_observation']['weather']
   	rel_humidity = parsed_json['current_observation']['relative_humidity']
