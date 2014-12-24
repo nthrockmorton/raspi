@@ -54,17 +54,17 @@ while True:
 		continue
 	
 	#Access URL of wunderground API
-  f = urllib2.urlopen('http://api.wunderground.com/api/ffd38634c3e2642d/conditions/q/MN/Minneapolis.json')
+  	f = urllib2.urlopen('http://api.wunderground.com/api/ffd38634c3e2642d/conditions/q/MN/Minneapolis.json')
 
-  #read and parse the JSON file from wunderground
-  json_string = f.read()
-  parsed_json = json.loads(json_string)
+  	#read and parse the JSON file from wunderground
+  	json_string = f.read()
+	parsed_json = json.loads(json_string)
 
-  #variables from JSON
-  location = parsed_json['current_observation']['display_location']['city']
-  temp_f = parsed_json['current_observation']['temp_f']
-  current_condition = parsed_json['current_observation']['weather']
-  rel_humidity = parsed_json['current_observation']['relative_humidity]
+  	#variables from JSON
+  	location = parsed_json['current_observation']['display_location']['city']
+  	temp_f = parsed_json['current_observation']['temp_f']
+  	current_condition = parsed_json['current_observation']['weather']
+  	rel_humidity = parsed_json['current_observation']['relative_humidity]
 	
 	int_temp_f = temp*1.8 +32
 	print ('Temperature: {0:0.1f} F').format(int_temp_f)
